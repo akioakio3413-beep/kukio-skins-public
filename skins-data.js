@@ -1,0 +1,1 @@
+window.KUKIO_SKINS = [];

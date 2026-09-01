@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kukio Skins Prices</title>
+    <meta name="description" content="Agar.io skin price catalog" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <header class="hero">
+        <div class="brand-mark">K</div>
+        <div>
+          <p class="eyebrow">Agar.io Skin Price DB</p>
+          <h1>Kukio Skins Prices</h1>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <div class="search-box">
+          <span>⌕</span>
+          <input id="queryInput" placeholder="スキン名、セット内容で検索" />
+          <button id="clearQuery" type="button">×</button>
+        </div>
+        <select id="priceFilter"></select>
+        <select id="sortSelect">
+          <option value="newest">新しい順</option>
+          <option value="price-low">安い順</option>
+          <option value="price-high">高い順</option>
+          <option value="name">名前順</option>
+        </select>
+      </section>
+
+      <section id="priceStrip" class="price-strip"></section>
+      <section id="summary" class="summary"></section>
+      <section id="skinList" class="skin-list"></section>
+    </main>
+
+    <script src="./skins-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
